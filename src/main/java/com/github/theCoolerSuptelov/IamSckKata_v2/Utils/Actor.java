@@ -3,6 +3,7 @@ package com.github.theCoolerSuptelov.IamSckKata_v2.Utils;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -19,13 +20,32 @@ public class Actor {
   private String name;
 
   @Column(name = "email")
+  @NotNull
   private String email;
 
   @ManyToMany(mappedBy = "actors")
   private Set<Authorities> authoritieses = new LinkedHashSet<>();
 
   @Column(name = "password")
+  @NotNull
   private String password;
+
+  public Actor(String name, String email, Set<Authorities> authoritieses, String password) {
+    this.name = name;
+    this.email = email;
+    this.authoritieses = authoritieses;
+    this.password = password;
+  }
+
+  public Actor(String name, String email, String password) {
+    this.id = UUID.randomUUID();
+    this.name = name;
+    this.email = email;
+    this.password = password;
+  }
+
+  public Actor() {
+  }
 
   public String getPassword() {
     return password;
@@ -42,7 +62,9 @@ public class Actor {
   public void setAuthoritieses(Set<Authorities> authoritieses) {
     this.authoritieses = authoritieses;
   }
-
+  public void addAuthorities(Authorities authorities){
+    this.authoritieses.add(authorities);
+  }
   public String getEmail() {
     return email;
   }

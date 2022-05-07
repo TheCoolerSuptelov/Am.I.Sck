@@ -25,6 +25,16 @@ public class Nurse {
   @JoinColumn(name = "actor_id", unique = true)
   private Actor actor;
 
+  public Nurse() {
+  }
+
+  public Nurse(String name, String email, Integer dateOfBirth, Actor actor) {
+    this.name = name;
+    this.email = email;
+    this.dateOfBirth = dateOfBirth;
+    this.actor = actor;
+  }
+
   public Actor getActor() {
     return actor;
   }

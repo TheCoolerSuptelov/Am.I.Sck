@@ -1,4 +1,10 @@
 package com.github.theCoolerSuptelov.IamSckKata_v2.Utils;
 
-public interface AuthoritiesRepository extends org.springframework.data.jpa.repository.JpaRepository<com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Authorities, java.util.UUID> {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.UUID;
+
+public interface AuthoritiesRepository extends JpaRepository<Authorities, UUID> {
+  Authorities findByTitleEquals(String title);
+
 }

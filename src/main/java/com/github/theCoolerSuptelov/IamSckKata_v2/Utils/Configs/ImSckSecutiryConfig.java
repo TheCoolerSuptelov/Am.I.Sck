@@ -27,6 +27,8 @@ public class ImSckSecutiryConfig extends WebSecurityConfigurerAdapter {
     httpSecurity.authorizeHttpRequests()
         .antMatchers("/*").authenticated()
         .and()
+        .antMatcher("api/clients/v1/RegisterNewClient").anonymous()
+        .and()
         .formLogin()
         .and()
         .logout().logoutSuccessUrl("/");

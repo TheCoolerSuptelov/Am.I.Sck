@@ -3,6 +3,7 @@ package com.github.theCoolerSuptelov.IamSckKata_v2.Clients;
 import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Actor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.sql.Date;
 import java.util.UUID;
 
@@ -14,9 +15,11 @@ public class Clients {
   private UUID id;
 
   @Column(name = "name")
+  @NotNull
   private String name;
 
   @Column(name = "email")
+  @NotNull
   private String email;
 
   @Column(name = "address")
@@ -28,6 +31,14 @@ public class Clients {
   @OneToOne(cascade = CascadeType.DETACH, orphanRemoval = true)
   @JoinColumn(name = "actor_id", unique = true)
   private Actor actor;
+
+  public Clients(String name, String email, String address, Date dateOfBirth, Actor actor) {
+    this.name = name;
+    this.email = email;
+    this.address = address;
+    this.dateOfBirth = dateOfBirth;
+    this.actor = actor;
+  }
 
   public Actor getActor() {
     return actor;
