@@ -18,13 +18,12 @@ public class ClientsDto implements Serializable {
   public String getPassword() {
     return password;
   }
-
   public void setPassword(String password) {
     this.password = password;
   }
 
   //  @JsonIgnore
-//  private final char[] password;
+  //  private final char[] password;
   private String password;
   public ClientsDto(String name, String email, String address, Date dateOfBirth, String password) {
     this.name = name;
