@@ -1,7 +1,7 @@
 package com.github.theCoolerSuptelov.IamSckKata_v2.Clients;
 
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Actor;
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.ActorService;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.Actor;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.ActorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

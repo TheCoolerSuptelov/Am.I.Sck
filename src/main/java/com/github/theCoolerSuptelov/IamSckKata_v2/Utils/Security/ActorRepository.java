@@ -1,6 +1,6 @@
-package com.github.theCoolerSuptelov.IamSckKata_v2.Utils;
+package com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security;
 
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Actor;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.Actor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

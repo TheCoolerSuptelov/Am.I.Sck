@@ -1,6 +1,6 @@
 package com.github.theCoolerSuptelov.IamSckKata_v2.Nurses;
 
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.ActorDto;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.ActorDto;
 
 import java.io.Serializable;
 import java.util.Objects;

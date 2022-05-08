@@ -1,7 +1,7 @@
 package com.github.theCoolerSuptelov.IamSckKata_v2;
 
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.ActorDto;
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.ActorService;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.ActorDto;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.ActorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

@@ -1,6 +1,6 @@
 package com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Configs;
 
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.ActorDetailService;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.ActorDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,6 +28,8 @@ public class ImSckSecutiryConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/*").authenticated()
         .and()
         .antMatcher("api/clients/v1/RegisterNewClient").anonymous()
+        .and()
+        .rememberMe().userDetailsService(this.actorDetailService)
         .and()
         .formLogin()
         .and()

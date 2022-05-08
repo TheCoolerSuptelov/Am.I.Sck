@@ -1,4 +1,6 @@
-package com.github.theCoolerSuptelov.IamSckKata_v2.Utils;
+package com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security;
+
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.Actor;
 
 import javax.persistence.*;
 import java.util.LinkedHashSet;

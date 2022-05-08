@@ -1,4 +1,4 @@
-package com.github.theCoolerSuptelov.IamSckKata_v2.Utils;
+package com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security;
 
 import java.io.Serializable;
 import java.util.Objects;

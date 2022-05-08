@@ -1,6 +1,6 @@
 package com.github.theCoolerSuptelov.IamSckKata_v2.Nurses;
 
-import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Actor;
+import com.github.theCoolerSuptelov.IamSckKata_v2.Utils.Security.Actor;
 
 import javax.persistence.*;
 import java.util.UUID;
