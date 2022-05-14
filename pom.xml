@@ -47,7 +47,12 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-hal-browser -->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.data</groupId>-->
+<!--			<artifactId>spring-data-rest-hal-browser</artifactId>-->
+<!--			<version>3.3.9.RELEASE</version>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>

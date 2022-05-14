@@ -24,19 +24,8 @@ public class ImSckSecutiryConfig extends WebSecurityConfigurerAdapter {
     return new BCryptPasswordEncoder();
   }
 
-  @Configuration
-  @Order(1)
-  public static class ApiWebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter{
-    protected void configure(HttpSecurity http) throws Exception {
-      http
-          .antMatcher("/api/**")
-          .authorizeRequests()
-          .and()
-          .httpBasic();
-    }
-  }
-
   @Override
+  @Order(2)
   protected void configure(HttpSecurity httpSecurity)throws Exception {
     httpSecurity
         .authorizeHttpRequests()
